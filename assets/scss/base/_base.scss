@@ -1,0 +1,31 @@
+:root {
+  --header-background: #2f2235;
+  --header-primary-font: #f2f2f2;
+  --header-light-font: #34d1d1;
+  --button-primary-background: #3f3244;
+  --grey-light: #d1d2d3;
+  --grey-dark: #666;
+  --primary-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}

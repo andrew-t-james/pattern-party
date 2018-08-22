@@ -1,0 +1,23 @@
+.header {
+  background: var(--header-background);
+  color: var(--header-primary-font);
+  height: 12%;
+  padding: 2rem 0;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__alternate--color {
+    color: var(--header-light-font);
+  }
+
+  &__student--name {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+}

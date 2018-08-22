@@ -1,0 +1,19 @@
+{
+  "name": "pattern-party",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/scss/main.scss assets/css/styles.css -w",
+    "serve": "lite-server",
+    "start": "npm-run-all --parallel serve watch:sass"
+  },
+  "keywords": [],
+  "author": "Andrew James <ajames20@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "4.9.2",
+    "npm-run-all": "4.1.2"
+  }
+}

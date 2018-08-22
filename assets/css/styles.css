@@ -1,0 +1,66 @@
+:root {
+  --header-background: #2f2235;
+  --header-primary-font: #f2f2f2;
+  --header-light-font: #34d1d1;
+  --button-primary-background: #3f3244;
+  --grey-light: #d1d2d3;
+  --grey-dark: #666;
+  --primary-black: #000; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.lower-highlight {
+  position: relative; }
+  .lower-highlight :before {
+    border-bottom: 1px solid var(--grey-dark);
+    bottom: -10px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 8rem; }
+
+.header {
+  background: var(--header-background);
+  color: var(--header-primary-font);
+  height: 12%;
+  padding: 2rem 0;
+  text-align: center; }
+  .header__title {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+  .header__alternate--color {
+    color: var(--header-light-font); }
+  .header__student--name {
+    font-size: 1.7rem;
+    font-weight: 300; }
+
+.accordion-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.general__header {
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin: 3rem 0;
+  text-transform: uppercase; }
