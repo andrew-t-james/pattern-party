@@ -1,3 +1,7 @@
-.accordion-tabs {
+.accordion-section {
   @include absCenter;
+
+  flex-direction: column;
+  padding: 0 2rem;
+  color: var(--grey-dark);
 }

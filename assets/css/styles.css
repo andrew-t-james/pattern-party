@@ -45,7 +45,7 @@ body {
   text-align: center; }
   .header__title {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 2rem;
     text-transform: uppercase; }
   .header__alternate--color {
@@ -54,13 +54,81 @@ body {
     font-size: 1.7rem;
     font-weight: 300; }
 
-.accordion-tabs {
+.accordion-section {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  color: var(--grey-dark); }
 
 .general__header {
   font-size: 1.4rem;
   font-weight: 100;
   margin: 3rem 0;
   text-transform: uppercase; }
+
+.accordion-tabs {
+  border: 1px solid var(--grey-light);
+  display: flex;
+  flex-wrap: wrap; }
+  .accordion-tabs label {
+    background: var(--grey-light);
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin: 0.5px 0;
+    order: 1;
+    order: initial;
+    padding: 1rem 2rem;
+    width: 100%; }
+  .accordion-tabs input[type="radio"] {
+    display: none; }
+  .accordion-tabs input[type="radio"]:checked + label {
+    background: #fff;
+    border: 1px solid var(--grey-light); }
+  .accordion-tabs input[type="radio"]:checked + label + .tab {
+    display: block; }
+
+.accordion-tabs .tab {
+  background: #fff;
+  display: none;
+  flex-grow: 1;
+  order: 10;
+  width: 100%; }
+
+.accordion-tabs .tab,
+.accordion-tabs label {
+  order: initial; }
+
+.tab {
+  position: relative; }
+  .tab-placeholder {
+    height: 9rem;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .tab-title {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    padding: 0.5rem; }
+  .tab-plus-sign {
+    position: absolute;
+    right: 3rem; }
+  .tab p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    padding: 0.3rem 1.5rem; }
+  .tab p:first-of-type {
+    margin-top: 2rem; }
+  .tab p:last-of-type {
+    margin-bottom: 3rem; }
+  .tab label {
+    font-size: 2rem; }
+  .tab .tab__heading {
+    border-bottom: 1px solid var(--grey-light);
+    color: var(--primary-black);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin: 0 auto; }
