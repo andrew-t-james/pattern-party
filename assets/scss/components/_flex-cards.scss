@@ -1,0 +1,26 @@
+.flex-cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.flex-card {
+  width: 100%;
+  margin-bottom: 2rem;
+
+  &__heading {
+    border-left: 1px solid var(--grey-light);
+    border-right: 1px solid var(--grey-light);
+    border-top: 1px solid var(--grey-light);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+  }
+
+  &__image {
+    height: 26rem;
+    width: calc(100vw - 4rem);
+  }
+}

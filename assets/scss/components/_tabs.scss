@@ -21,7 +21,6 @@
 
   & input[type="radio"]:checked + label {
     background: #fff;
-    border: 1px solid var(--grey-light);
   }
 
   & input[type="radio"]:checked + label + .tab {
@@ -47,7 +46,7 @@
   position: relative;
 
   &-placeholder {
-    height: 9rem;
+    height: 15rem;
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -55,7 +54,6 @@
   &-title {
     margin-bottom: 2rem;
     font-size: 1.6rem;
-    padding: 0.5rem;
   }
 
   &-plus-sign {
