@@ -47,13 +47,13 @@
 
   &-placeholder {
     height: 15rem;
-    width: 100%;
     margin-bottom: 1rem;
+    width: 100%;
   }
 
   &-title {
-    margin-bottom: 2rem;
     font-size: 1.6rem;
+    margin-bottom: 2rem;
   }
 
   &-plus-sign {
@@ -62,8 +62,8 @@
   }
 
   & p {
-    margin-bottom: 2rem;
     font-size: 1.6rem;
+    margin-bottom: 2rem;
     padding: 0.3rem 1.5rem;
   }
 
@@ -83,9 +83,9 @@
     border-bottom: 1px solid var(--grey-light);
     color: var(--primary-black);
     font-size: 2rem;
+    margin: 0 auto;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 90%;
-    margin: 0 auto;
   }
 }

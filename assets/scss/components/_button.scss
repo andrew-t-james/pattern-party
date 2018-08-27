@@ -4,9 +4,10 @@
   font-size: 2rem;
   font-weight: 100;
   height: 5rem;
-  width: calc(100vw - 3rem);
-  text-transform: uppercase;
   letter-spacing: 3px;
+  max-width: 30rem;
+  text-transform: uppercase;
+  width: calc(100vw - 3rem);
 }
 
 .button-wrapper {
