@@ -21,6 +21,45 @@
 
   &__image {
     height: 26rem;
-    width: calc(100vw - 4rem);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .flex-cards__wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px 2rem;
+    grid-template-areas: "grid-one grid-one grid-one grid-one grid-two grid-two" "grid-three grid-three grid-four grid-four grid-five grid-five" "grid-six grid-six grid-seven grid-seven grid-seven grid-seven";
+  }
+
+  .card-three {
+    grid-area: grid-three;
+  }
+
+  .card-four {
+    grid-area: grid-four;
+  }
+
+  .card-one {
+    grid-area: grid-one;
+  }
+
+  .card-two {
+    grid-area: grid-two;
+  }
+
+  .card-five {
+    grid-area: grid-five;
+  }
+
+  .card-six {
+    grid-area: grid-six;
+  }
+
+  .card-seven {
+    grid-area: grid-seven;
   }
 }
