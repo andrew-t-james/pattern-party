@@ -4,10 +4,11 @@
   flex-wrap: wrap;
 
   & label {
-    background: var(--grey-light);
+    background: lighten(#d1d2d3, 10%);
     cursor: pointer;
     display: block;
-    font-weight: bold;
+    font-size: 1.9rem;
+    font-weight: 100;
     margin: 0.5px 0;
     order: 1;
     order: initial;
@@ -24,7 +25,8 @@
   }
 
   & input[type="radio"]:checked + label + .tab {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -87,5 +89,67 @@
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .accordion-section {
+    margin: 0 auto;
+    max-width: 130rem;
+  }
+
+  .accordion-tabs {
+    border: none;
+
+    & input[type="radio"]:checked + label + .tab {
+      flex-direction: row;
+    }
+
+    & input[type="radio"]:checked + label {
+      border-left: 1px solid var(--grey-light);
+      border-right: 1px solid var(--grey-light);
+      border-top: 1px solid var(--grey-light);
+    }
+
+    & input[type="radio"]:not(:checked) + label {
+      border-bottom: 1px solid var(--grey-light);
+    }
+
+    & img {
+      height: 45rem;
+      padding: 2rem;
+      width: 40rem;
+    }
+
+    .tab {
+      border-bottom: 1px solid var(--grey-light);
+      border-left: 1px solid var(--grey-light);
+      border-right: 1px solid var(--grey-light);
+      order: 1;
+
+      & .tab-copy {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        & p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    label {
+      width: 25%;
+    }
+  }
+
+  .tab-plus-sign {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  .accordion-section {
+    padding: 0;
   }
 }

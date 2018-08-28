@@ -73,10 +73,11 @@ body {
   display: flex;
   flex-wrap: wrap; }
   .accordion-tabs label {
-    background: var(--grey-light);
+    background: #ebecec;
     cursor: pointer;
     display: block;
-    font-weight: bold;
+    font-size: 1.9rem;
+    font-weight: 100;
     margin: 0.5px 0;
     order: 1;
     order: initial;
@@ -87,7 +88,8 @@ body {
   .accordion-tabs input[type="radio"]:checked + label {
     background: #fff; }
   .accordion-tabs input[type="radio"]:checked + label + .tab {
-    display: block; }
+    display: flex;
+    flex-direction: column; }
 
 .accordion-tabs .tab {
   background: #fff;
@@ -130,6 +132,44 @@ body {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 90%; }
+
+@media screen and (min-width: 50rem) {
+  .accordion-section {
+    margin: 0 auto;
+    max-width: 130rem; }
+  .accordion-tabs {
+    border: none; }
+    .accordion-tabs input[type="radio"]:checked + label + .tab {
+      flex-direction: row; }
+    .accordion-tabs input[type="radio"]:checked + label {
+      border-left: 1px solid var(--grey-light);
+      border-right: 1px solid var(--grey-light);
+      border-top: 1px solid var(--grey-light); }
+    .accordion-tabs input[type="radio"]:not(:checked) + label {
+      border-bottom: 1px solid var(--grey-light); }
+    .accordion-tabs img {
+      height: 45rem;
+      padding: 2rem;
+      width: 40rem; }
+    .accordion-tabs .tab {
+      border-bottom: 1px solid var(--grey-light);
+      border-left: 1px solid var(--grey-light);
+      border-right: 1px solid var(--grey-light);
+      order: 1; }
+      .accordion-tabs .tab .tab-copy {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem; }
+        .accordion-tabs .tab .tab-copy p {
+          font-size: 1.8rem; }
+    .accordion-tabs label {
+      width: 25%; }
+  .tab-plus-sign {
+    display: none; } }
+
+@media screen and (min-width: 100rem) {
+  .accordion-section {
+    padding: 0; } }
 
 .button {
   background-color: var(--header-background);
@@ -240,7 +280,7 @@ body {
   padding-left: 4rem;
   width: 100%; }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 90rem) {
   .nav-bar-link-section {
     background: #b7b9ba;
     display: flex;
