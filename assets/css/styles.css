@@ -111,36 +111,9 @@ body {
   .thin-right-side-line {
     width: 70%; } }
 
-@media screen and (min-width: 70rem) {
-  .thin-right-side-line {
-    width: 75%; } }
-
 @media screen and (min-width: 90rem) {
   .thin-right-side-line {
     width: 80%; } }
-
-.accordion-tabs {
-  border: 1px solid var(--grey-light);
-  display: flex;
-  flex-wrap: wrap; }
-  .accordion-tabs label {
-    background: #ebecec;
-    cursor: pointer;
-    display: block;
-    font-size: 1.9rem;
-    font-weight: 100;
-    margin: 0.5px 0;
-    order: 1;
-    order: initial;
-    padding: 1rem 2rem;
-    width: 100%; }
-  .accordion-tabs input[type="radio"] {
-    display: none; }
-  .accordion-tabs input[type="radio"]:checked + label {
-    background: #fff; }
-  .accordion-tabs input[type="radio"]:checked + label + .tab {
-    display: flex;
-    flex-direction: column; }
 
 .accordion-tabs .tab {
   background: #fff;
@@ -162,9 +135,10 @@ body {
   .tab-title {
     font-size: 1.6rem;
     margin-bottom: 2rem; }
-  .tab-plus-sign {
+  .tab-plus-sign, .tab-minus-sign {
     position: absolute;
-    right: 3rem; }
+    right: 2rem;
+    top: 22%; }
   .tab p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
@@ -183,6 +157,34 @@ body {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 90%; }
+
+.accordion-tabs {
+  border: 1px solid var(--grey-light);
+  display: flex;
+  flex-wrap: wrap; }
+  .accordion-tabs label {
+    background: #ebecec;
+    cursor: pointer;
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 100;
+    margin: 0.5px 0;
+    order: 1;
+    order: initial;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: relative; }
+  .accordion-tabs input[type="radio"] {
+    display: none; }
+  .accordion-tabs input[type="radio"]:checked + label {
+    background: #fff; }
+  .accordion-tabs input[type="radio"]:checked + label + .tab {
+    display: flex;
+    flex-direction: column; }
+  .accordion-tabs input[type="radio"]:checked + label > span.tab-plus-sign {
+    display: none; }
+  .accordion-tabs input[type="radio"]:not(:checked) + label > span:nth-of-type(2) {
+    display: none; }
 
 @media screen and (min-width: 50rem) {
   .accordion-section {
@@ -215,7 +217,8 @@ body {
           font-size: 1.8rem; }
     .accordion-tabs label {
       width: 25%; }
-  .tab-plus-sign {
+  .tab-plus-sign,
+  .tab-minus-sign {
     display: none; } }
 
 @media screen and (min-width: 100rem) {
