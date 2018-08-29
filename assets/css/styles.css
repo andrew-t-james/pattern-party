@@ -172,8 +172,8 @@ body {
     order: 1;
     order: initial;
     padding: 1rem 2rem;
-    width: 100%;
-    position: relative; }
+    position: relative;
+    width: 100%; }
   .accordion-tabs input[type="radio"] {
     display: none; }
   .accordion-tabs input[type="radio"]:checked + label {
