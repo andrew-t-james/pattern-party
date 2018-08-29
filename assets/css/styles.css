@@ -37,6 +37,10 @@ body {
     transform: translate(-50%, -50%);
     width: 8rem; }
 
+@media screen and (min-width: 50rem) {
+  .lower-highlight :before {
+    border-bottom: 0; } }
+
 .header {
   background: var(--header-background);
   color: var(--header-primary-font);
@@ -54,6 +58,22 @@ body {
     font-size: 1.7rem;
     font-weight: 300; }
 
+@media screen and (min-width: 50rem) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7rem; }
+    .header h1:before,
+    .header span:before {
+      display: none; }
+    .header__title {
+      margin-bottom: 0;
+      font-size: 2.8rem; }
+    .header__student--name {
+      font-size: 1.9rem;
+      letter-spacing: 1.2px; } }
+
 .accordion-section {
   display: flex;
   justify-content: center;
@@ -67,6 +87,38 @@ body {
   font-weight: 100;
   margin: 3rem 0;
   text-transform: uppercase; }
+
+.thin-right-side-line {
+  display: none; }
+
+@media screen and (min-width: 50rem) {
+  .general__header {
+    border: 1px solid red;
+    font-size: 1.3rem;
+    padding: 0 4rem;
+    width: 100vw;
+    display: flex;
+    align-items: center; }
+  .thin-right-side-line {
+    display: block;
+    width: 60%;
+    border: 0.5px solid var(--grey-light);
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translate(-2rem, -50%); } }
+
+@media screen and (min-width: 60rem) {
+  .thin-right-side-line {
+    width: 70%; } }
+
+@media screen and (min-width: 70rem) {
+  .thin-right-side-line {
+    width: 75%; } }
+
+@media screen and (min-width: 90rem) {
+  .thin-right-side-line {
+    width: 80%; } }
 
 .accordion-tabs {
   border: 1px solid var(--grey-light);
