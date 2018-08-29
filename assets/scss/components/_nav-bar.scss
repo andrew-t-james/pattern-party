@@ -1,6 +1,7 @@
 .nav-bar-link-section {
   background: lighten(#d1d2d3, 10%);
   padding: 1rem 2rem;
+  display: block;
 
   & img {
     display: none;
@@ -16,6 +17,7 @@
     max-width: 1300px;
     padding: 1.5rem;
     width: calc(100vw - 4rem);
+    cursor: pointer;
 
     &--heading {
       font-size: 1.7rem;
